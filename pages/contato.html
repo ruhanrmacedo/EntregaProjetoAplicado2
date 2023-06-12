@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contato</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Entre em contato</h1><br>
+        <a href="../index.html">Voltar à home</a><br><br>
+
+        <a href="#formContato">Formulário</a>
+        <a href="#contatos">Contatos</a>
+        <a href="#localizacao">Localização</a>
+    </header>
+
+
+    <form id="formContato">
+        <label id="labelContato" for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label id="labelContato" for="assunto">Assunto:</label>
+        <select id="assunto" name="assunto" required>
+            <option value="">Selecione um assunto</option>
+            <option value="Informações sobre programas de intercâmbio">Informações sobre programas de intercâmbio
+            </option>
+            <option value="Processo de inscrição">Processo de inscrição</option>
+            <option value="Acomodação">Acomodação</option>
+            <option value="Vistos e documentos">Vistos e documentos</option>
+            <option value="Pagamentos e valores">Pagamentos e valores</option>
+            <option value="Outros">Outros</option>
+        </select>
+
+        <label id="labelContato" for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2 id="contatos">Contatos</h2>
+    <div class="address">
+        <p>Endereço: 123 Main Street, Perth, WA 6000, Austrália</p>
+        <p>Telefone: +61 8 1234 5678</p>
+        <p>Email: info@waexchangeadventures.com</p>
+    </div>
+
+    <h2 id="localizacao">Localização</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387.14139107851!2d115.82513167502773!3d-31.902755519930825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32af94c7e95b81%3A0x71af61264e29dcba!2s123%20Main%20St%2C%20Osborne%20Park%20WA%206017%2C%20Austr%C3%A1lia!5e0!3m2!1spt-BR!2sbr!4v1686538123412!5m2!1spt-BR!2sbr"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer>
+        <p>Endereço: 123 Main Street, Perth, WA 6000, Austrália</p>
+        <p>Telefone: +61 8 1234 5678</p>
+        <p>Email: info@waexchangeadventures.com</p>
+        <p>Todos <strong>DIREITOS</strong> reservados</p>
+    </footer>
+
+
+</body>
+
+</html>

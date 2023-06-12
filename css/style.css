@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #555;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    transition: color 0.3s ease;
+}
+
+header:hover h1 {
+    color: #ff5500;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #ff5500;
+}
+
+/* Estilos para a seção de texto */
+#texto {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#texto:hover {
+    background-color: #e0e0e0;
+}
+
+#texto p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+#texto .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#texto .image-grid img {
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#texto .image-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para a seção de lista */
+#list {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: none;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #list:hover {
+    background-color: #e0e0e0;
+  }
+  
+  #list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #list ul li {
+    margin-bottom: 10px;
+  }
+  
+  #list ul li::before {
+    content: "\2022";
+    color: #ff5500;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  #list ol {
+    list-style-type: none;
+    counter-reset: item;
+    padding: 0;
+    margin-left: 20px;
+  }
+  
+  #list ol li {
+    margin-bottom: 5px;
+  }
+  
+  #list ol li::before {
+    content: counter(item) ".";
+    counter-increment: item;
+    color: #ff5500;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+/* Estilos para o footer */
+footer {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #555;
+}
+
+#imagens {
+    width: 100%;
+    height: 400px;
+    background-color: beige;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#imagens:hover {
+    background-color: #f0f0f0;
+}
+
+#tamImagem {
+    width: 33%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#buttonCity {
+    background-color: #ff5500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#buttonCity:hover {
+    background-color: #ff7700;
+}
+
+#videosIndex {
+    margin-bottom: 40px;
+}
+
+/*pages/contato.html */
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+#formContato {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+#labelContato {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#assunto {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input,
+#assunto,
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#contatos {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.address {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#localizacao {
+    text-align: center;
+    margin-top: 40px;
+}
